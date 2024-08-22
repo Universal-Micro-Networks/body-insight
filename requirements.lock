@@ -21,8 +21,12 @@ boto3==1.35.0
 botocore==1.35.0
     # via boto3
     # via s3transfer
+click==8.1.7
+    # via uvicorn
 fastapi==0.112.1
     # via body-insight
+h11==0.14.0
+    # via uvicorn
 idna==3.7
     # via anyio
 jmespath==1.0.1
@@ -63,3 +67,5 @@ typing-extensions==4.12.2
     # via sqlalchemy
 urllib3==2.2.2
     # via botocore
+uvicorn==0.30.6
+    # via body-insight

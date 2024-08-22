@@ -16,4 +16,4 @@ COPY README.md README.md
 RUN pip install -r requirements.lock
 
 # コマンドを実行
-CMD ["python", "app.py"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "5500", "--reload"]

@@ -75,6 +75,7 @@ typing-extensions==4.12.2
 urllib3==2.2.2
     # via botocore
 uvicorn==0.30.6
+    # via body-insight
 uvloop==0.20.0
     # via uvicorn
 watchfiles==0.23.0
