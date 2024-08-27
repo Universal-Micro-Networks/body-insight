@@ -8,12 +8,13 @@ WORKDIR /app
 RUN pip install --upgrade pip
 
 # 依存関係をインストール
-COPY ./src/body_insight/app.py /app/app.py
+#COPY src/ body_insight
 COPY requirements.lock requirements.lock
 COPY pyproject.toml pyproject.toml
 COPY README.md README.md
 
 RUN pip install -r requirements.lock
+ENV PYTHONPATH=/app
 
 # コマンドを実行
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "5500", "--reload"]
+CMD ["uvicorn", "body_insight.app:app", "--host", "0.0.0.0", "--port", "5500", "--reload"]

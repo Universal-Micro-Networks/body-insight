@@ -25,6 +25,8 @@ click==8.1.7
     # via uvicorn
 fastapi==0.112.1
     # via body-insight
+greenlet==3.0.3
+    # via body-insight
 h11==0.14.0
     # via uvicorn
 idna==3.7
